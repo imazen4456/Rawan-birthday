@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عيد ميلاد روان</title>
+    <style>
+        /* CSS */
+        body {
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            background-color: #f2f2f2;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, #f44336, #ff80ab);
+            border-radius: 20px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+        }
+
+        header {
+            color: white;
+            margin-top: 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            animation: fadeIn 3s ease-out;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .message {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+            font-size: 1.2rem;
+            color: #333;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-out;
+        }
+
+        footer {
+            background-color: #ff4081;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 30px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            animation: slideUp 2s ease-out;
+        }
+
+        footer p {
+            font-size: 1.2rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Button styling */
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #ff4081;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #f44336;
+        }
+
+        /* Scroll animation */
+        .scroll-animation {
+            animation: scrollUp 3s ease-out;
+        }
+
+        @keyframes scrollUp {
+            0% {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+
+            .message {
+                font-size: 1rem;
+                padding: 20px;
+            }
+
+            footer {
+                font-size: 1rem;
+                padding: 10px;
+            }
+
+            .image img {
+                max-width: 90%;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .message {
+                font-size: 0.9rem;
+                padding: 15px;
+            }
+
+            footer {
+                font-size: 1rem;
+                padding: 8px;
+            }
+
+            .btn {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Happy birthday to you🎉❤</h1>
+            <p>عيد ميلاد سعيد عليكي!</p>
+        </header>
+
+        <section class="message scroll-animation">
+            <p>أنتِ إنسانة مميزة جدًا بتمنالك سنة جديدة مليانة سعادة ونجاح وكل الحاجات اللي بتحلمي بيها تتحقق ربنا يكتبلك كل الخير ويجعل أيامك كلها فرحة 🎂🌟</p>
+        </section>
+
+        <footer>
+            <p>بتمنى لك يوم جميل مليان بالسعادة!</p>
+        </footer>
+    </div>
+
+    <script>
+        // JavaScript
+        document.addEventListener("DOMContentLoaded", function() {
+            const image = document.querySelector('.image img');
+            image.addEventListener('mouseenter', () => {
+                image.style.transform = 'scale(1.1)';
+            });
+            image.addEventListener('mouseleave', () => {
+                image.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
